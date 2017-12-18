@@ -1,3 +1,7 @@
+sudo fallocate -l 500M /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
 sudo apt update --yes
 sudo apt upgrade --yes
 cd /root
